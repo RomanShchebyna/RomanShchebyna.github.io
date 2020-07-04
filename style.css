@@ -1,0 +1,37 @@
+body{
+    font-family:'Roboto',sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+}
+.conteiner{
+    width: 1200px;
+    margin:  0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.row{
+    margin-left: -15px;
+    margin-right: 15px;
+
+}
+
+.row::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+[class*="col-"]{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-md-3{
+    width: 25%;
+}
+.col-md-6{
+    width: 50%;
+}
+   
