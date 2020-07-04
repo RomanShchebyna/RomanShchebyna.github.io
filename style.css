@@ -18,11 +18,12 @@ body{
 
 }
 
-.row::after{
+.row:after {
     clear: both;
     display: block;
     content: "";
-}
+} 
+
 [class*="col-"]{
     float: left;
     padding-left: 15px;
