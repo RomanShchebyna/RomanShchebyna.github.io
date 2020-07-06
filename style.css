@@ -19,11 +19,12 @@ body{
 
 }
 
-.row:after, .menu::after {
+ .row:after, .menu::after{
     clear: both;
     display: block;
     content: "";
 } 
+
 
 [class*="col-"]{
     float: left;
@@ -47,6 +48,7 @@ body{
     width: 25%;
     float: left;
     border-left: 1px solid #2c71b8;
+    position: relative;
     
 }
 .menu li:last-child{
@@ -73,47 +75,51 @@ body{
 .search{
     position: relative;
     width: 75%;
-    /* background-color:rgba(red, green, blue, 1);
-    border: 1px solid #2c71b8; */
-    /* padding-top: 5px; */
-    /* height: 40px; */
     float: left;
     margin-top: 5px;
+    overflow: hidden;
 }
-.korzina{
+.cart{
     position: relative;
     margin-top: 5px;
     width: 25%;
+    height: 40px;
    /* border:1px solid black; */
    
-    padding-top: 5px;
+    /* padding-top: 5px; */
     float: left;
 }
 
 .ShoppingСart{
-    width: 43px;
-    height: 43px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0px;
 
     background-color: white;
-    padding-top: 10px;
+ 
 
 }
 .ShoppingСart a{
-    padding: 15px 13px 9px 12px;
+    padding: 8px 28px 13px 12px;
 }
 
 
 
 
 .ShoppingСart img{
-/* box-sizing: border-box; */
+
 width: 18px;
 height: 20px;
 
+position: absolute;
+margin: auto;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
 
 }
 
@@ -129,7 +135,8 @@ height: 20px;
     text-align: center;
     line-height: 20px;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;;
+    font-size: 12px;
+    z-index: 2;
 }
 
 
@@ -142,17 +149,24 @@ height: 20px;
 display: block;
 position: relative;
 /* border: 1px solid #2c71b8; */
+
+
+}
+
+form{
+    height: 40px;
 }
 form input{
     
     width: 100%;
     border:1px solid #2c71b8;
     background-color:rgba(202, 219, 237, 0);
-    height: 43px;
-color:#2c71b8;
-font-family: 'Roboto', sans-serif;
-font-size:21px;
-padding-left: 15px;
+    height: 100%;
+    color:#2c71b8;
+    font-family: 'Roboto', sans-serif;
+    font-size:21px;
+    padding-left: 15px;
+
 }
 
 
@@ -168,7 +182,7 @@ padding-left: 15px;
     height: 30px;
     top: 0px;
     right: 0px;
-    margin: 7px;
+    margin: 5px;
     background-color: #2c71b8;
     
 }
