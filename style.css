@@ -19,7 +19,7 @@ body{
 
 }
 
- .row:after, .menu::after{
+ .row:after, .menu::after, .main-conteiner::after {
     clear: both;
     display: block;
     content: "";
@@ -170,6 +170,8 @@ form input{
 }
 
 
+
+
 ::-webkit-input-placeholder {color:#2c71b8;font-family: 'Roboto', sans-serif;font-size:21px;}
 ::-moz-placeholder          {color:#2c71b8;font-family: 'Roboto', sans-serif;font-size:21px;}/* Firefox 19+ */
 :-moz-placeholder           {color:#2c71b8;font-family: 'Roboto', sans-serif;font-size:21px;}/* Firefox 18- */
@@ -199,3 +201,94 @@ form input{
     border: none;
 
 }
+
+.slider{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 1px solid rgb(202, 219, 237);
+}
+
+.main-conteiner{
+    width: 1200px;
+    margin:  0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.col-main-md-3
+{
+    width: 25%;
+    height: 845px;
+   
+    
+}
+.filterpanel{
+    background-color: #568dc6;
+}
+.col-main-md-9{
+    width: 75%;
+    height: 2000px;
+  
+}
+
+.col-main-md-9conteiner{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    height:150px;
+    width: 100%;
+    
+   
+}
+
+ .col-main-md-9 .col-main-md-3{
+   
+    height: 650px;
+    /* background-color: cornflowerblue; */
+    width: 29%;
+    border: 1px solid rgb(202, 219, 237);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: initial;
+   
+}
+
+.filterlink a{
+    text-decoration: none;
+    color: #235a93;
+    margin-top: 30px;
+    display: inline-block;
+}
+.filterlink{
+    display: inline-block;
+}
+
+.image{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(202, 219, 237);
+}
+h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+   font-size: 48px;
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+
+.image {
+   
+    text-align: center;
+    display: block;
+   
+
+
+}
+img{
+    margin-top: 45px;
+}
+
+

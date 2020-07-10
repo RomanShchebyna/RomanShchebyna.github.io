@@ -53,8 +53,5 @@ ul.menu > li:hover  ul.submenu {
    
 }
 
-.home >a:hover .menu a{
-    color: white;
-    background-color: #2c71b8;
-}
+
 
