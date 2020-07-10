@@ -283,12 +283,37 @@ h2{
    
     text-align: center;
     display: block;
+    position: relative;
    
 
 
 }
-img{
+.image img{
     margin-top: 45px;
+}
+
+.image .bloc1{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #235a93;
+    background-color: rgba(255, 255, 255, 0);
+  
+    z-index: 2;
+ 
+
+}
+.image .bloc2{
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #2c71b8;
+    background-color: rgba(255, 255, 255, 0);
+  
 }
 
 
