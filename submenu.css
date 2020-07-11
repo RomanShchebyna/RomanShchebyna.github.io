@@ -9,7 +9,7 @@
 
  ul.Shipping{
     position: absolute;
-    left: -99%;
+    left: calc(-100% + 1px);
     
 }
 
