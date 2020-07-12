@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="submenu.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
@@ -24,8 +24,8 @@
                     <div class="col-md-6">
                         <nav>
 
-                            <div class="dropdown">
-                                <button class="dropbtn">Home</button>
+                            <div class="menu">
+                                <button class="menu-btn">Home</button>
                                 <div class="dropdown-content">
                                     <a href="">Lorem ipsum dolor</a>
                                     <a href="">Sit amet</a>
@@ -34,8 +34,8 @@
                                     <a href="">Dolore magna aliqua</a>
                                 </div>
                               </div>
-                              <div class="dropdown">
-                                <button class="dropbtn">Products</button>
+                              <div class="menu">
+                                <button class="menu-btn">Products</button>
                                 <div class="dropdown-content">
                                     <a href="">Dolore magna aliqua</a>
                                     <a href="">Ut enim ad minim veniam</a>
@@ -43,8 +43,8 @@
                                     <a href="">Quis nostrud</a>
                                 </div>
                               </div>
-                              <div class="dropdown">
-                                <button class="dropbtn">Payment</button>
+                              <div class="menu">
+                                <button class="menu-btn">Payment</button>
                                 <div class="dropdown-content">
                                     <a href="">Consectetur</a>
                                     <a href="">Payment</a>
@@ -53,8 +53,8 @@
                                     <a href="">Consectetur adipisicing</a>
                                 </div>
                               </div>
-                              <div class="dropdown">
-                                <button class="dropbtn">Shipping</button>
+                              <div class="menu">
+                                <button class="menu-btn">Shipping</button>
                                 <div class="dropdown-content shipping">
                                     <a href="">Lorem</a>
                                     <a href="">Sit</a>
@@ -63,71 +63,6 @@
                                     <a href="">Lorem</a>
                                 </div>
                               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <!-- <ul class="menu">
-                                <li><a href="">Home123</a>
-                                    <ul class="submenu home">
-                                        <li><a href="">Lorem ipsum dolor</a></li>
-                                        <li><a href="">Sit amet</a></li>
-                                        <li><a href="">Consectetur adipisicing</a></li>
-                                        <li><a href="">Tempor incididunt</a></li>
-                                        <li><a href="">Dolore magna aliqua</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="">Products</a>
-                                    <ul class="submenu products">
-                                        <li><a href="">Dolore magna aliqua</a></li>
-                                        <li><a href="">Ut enim ad minim veniam</a></li>
-                                        <li><a href="">Sit amet</a></li>
-                                        <li><a href="">Quis nostrud</a></li>
-                                        
-                                    </ul>
-                                </li>
-
-                                <li><a href="">Payment</a>
-                                    <ul class="submenu payment">
-                                        <li><a href="">Consectetur</a></li>
-                                        <li><a href="">Payment</a></li>
-                                        <li><a href="">Tempor incididunt</a></li>
-                                        <li><a href="">Tempor incididunt</a></li>
-                                        <li><a href="">Consectetur adipisicing</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="">Shipping</a>
-                                    <ul class="submenu Shipping">
-                                        <li><a href="">Lorem</a></li>
-                                        <li><a href="">Sit</a></li>
-                                        <li><a href="">Consectetur</a></li>
-                                        <li><a href="">Tempor incididunt</a></li>
-                                        <li><a href="">Lorem</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul> -->
 
                         </nav>
                     </div>
@@ -161,7 +96,20 @@
     </header>
 
      <main class="main">
-        <div class="slider"></div>
+        <div class="slider-conteiner">
+            <div class="slider-btn"><button><img src="images/left.png" alt=""></button></div>
+
+            <label id="Slide-label">Slide #3</label>
+
+            <div class="slide-row-bottom-conteiner">
+                <div class="slide1"></div>
+                <div class="slide2"></div>
+                <div class="slide3 active"></div>
+                <div class="slide4"></div>
+
+            </div>
+            <div class="slider-btn"><button><img src="images/right.png" alt=""></button></div>
+        </div>
             <div class="main-conteiner">
                 <div class="col-main-md-3 filterpanel"></div>
                 <div class="col-main-md-9">
