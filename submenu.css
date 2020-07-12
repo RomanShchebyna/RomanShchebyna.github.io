@@ -67,6 +67,7 @@ ul.menu > li:hover  ul.submenu {
 } 
 
 .dropbtn {
+    background-color:#ffffff00;
     height: 50px;
     color: #2c71b8;
     text-align: center;
