@@ -272,9 +272,10 @@ content: "";
 
 .filterpanel{
     margin-right: 15px;
-    background-color: #568dc6;
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 0px;
     height: 850px;
+    border-right: 1px solid;
 }
 
 
@@ -585,3 +586,92 @@ div .prise span{
  .no-pading-right{
      padding-right: 0px;
  }
+
+ /* ______Filter______ */
+
+ .filterpanel label::before{
+     content: "";
+     display: block;
+     width: 10px;
+     height: 10px;
+     border: 1px solid white;
+     position: absolute;
+     top: 5px;
+     left: 0px;
+
+ }
+
+ .filterpanel input[type="checkbox"]:checked + label::before{
+     background-color: white;
+
+
+ }
+
+ .checkbox_filter{
+     appearance: none;
+     
+
+ }
+.checkbox{
+    position: relative;
+
+}
+ .checkboxLabel{
+    cursor: pointer;
+     padding-left: 15px;
+
+ }
+ .filterpanel{
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
+
+
+ .filterpanel ul span{
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    
+ }
+
+
+
+ .filterpanel ul{
+     padding-left: 20px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+ }
+
+ .filterpanel ul li{
+    padding: 10px 0px;
+
+ }
+ .ShowMore{
+     
+     display: block;
+     text-align: center;
+     text-decoration: none;
+     color: white;
+     font-size: 21px;
+     font-weight: 300;
+
+
+ }
+ .filterpanel input[type="submit"]{
+     background-color: #2c71b8;
+     width: 210px;
+     height: 50px;
+     border: 1px solid white;
+     margin: 20px;
+     color: white;
+     font-size: 21px;
+ }
+
+ .filterpanel input[type="submit"]:hover{
+
+    font-weight: 700;
+    background-color: #568dc6;
+}
