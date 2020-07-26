@@ -609,6 +609,7 @@ div .prise span{
 
  .checkbox_filter{
      appearance: none;
+     -webkit-appearance: none;
      
 
  }
