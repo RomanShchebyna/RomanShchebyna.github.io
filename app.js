@@ -141,110 +141,61 @@ for( let i =0;i<moredetails.length;i++){
 
 
 
-let decrementButton = document.querySelectorAll(".decrement-button")[0] // кнопка -
-console.log (decrementButton);
-let incrementButton = document.querySelectorAll(".increment-button")[0]  // кнопка + 
-console.log (incrementButton);
+let decrementButtons = document.querySelectorAll(".decrement-button") // кнопка -
 
-let productsQuantyti = document.querySelectorAll(".quantyti-input")[0]  // productQuantyti значение колличества  выбранного товара добавляемого в корзину.
+console.log (decrementButtons);
+let incrementButtons = document.querySelectorAll(".increment-button")  // кнопка + 
+console.log (incrementButtons);
+
+let productsQuantyti = document.querySelectorAll(".quantyti-input")  // productQuantyti значение колличества  выбранного товара добавляемого в корзину.
 console.log(productsQuantyti)
 
 
 
 
-let curentCount =  productsQuantyti.value;
+// let curentCount =  productsQuantyti.value;
 
+let minCount = 1;
+let maxCount = 5;
 
-
-function toggleDecrementState(count){   // Функция получает значение переменной в поле колличества выбранного товара и в зависимости от значения включает и выключает активность кнопки минус.
-if(count <=1 ){
-   decrementButton.disabled=true;
-   
-}
-else{
-    decrementButton.disabled=false;
-}
+for (let i=0; i < productsQuantyti.length; i++){
+   let curentCount = productsQuantyti[i].value;
+   toggleButtonState(curentCount,decrementButtons[i],incrementButtons[i])
 }
 
-function toggleIncrementState(count){   // Функция получает значение переменной в поле колличества выбранного товара и в зависимости от значения включает и выключает активность кнопки минус.
-   if(count >=5 ){
-      incrementButton.disabled=true;
-      
-   }
-   else{
-      incrementButton.disabled=false;
-   }
-   }
 
-
-
-
-
-toggleDecrementState(curentCount);     // Функция которая переключает состояние декремента.
-
-
+function toggleButtonState(count,decrementButton,incrementButton){
+   decrementButton.disabled = count <= minCount;
+   incrementButton.disabled = count >= maxCount;   // если count правда тогда  отключаем кнопку.
+}
 
 
 
 // Вариант с блокировкой кнопи -
 
-
-
-incrementButton.addEventListener("click",function(){
-   let curentCount = + productsQuantyti.value;
+for (let i=0; i < incrementButtons.length;i++)
+{
+incrementButtons[i].addEventListener("click",function(){
+   let curentCount = +productsQuantyti[i].value;
    let nextcount = curentCount + 1;
-   productsQuantyti.value = nextcount;
-toggleDecrementState(nextcount);
-toggleIncrementState(nextcount);
+   productsQuantyti[i].value = nextcount;
+   toggleButtonState(nextcount,decrementButtons[i],incrementButtons[i])
     
-});
-
-
-
-
-decrementButton.addEventListener("click",function(){
-   let curentCount = + productsQuantyti.value;
-   let nextcount = curentCount - 1;
-   productsQuantyti.value = nextcount;
-   toggleDecrementState(nextcount);
-   toggleIncrementState(nextcount);
-});
-
-
-
-
-
-
-// Вариант с проверкой значения без блокиковки кнопки.
-
-/*
-decrementButton.addEventListener("click",function(){
-   let curentCount = + productsQuantyti.value;
-   if(curentCount>=2){
-      rem();
-   }
-   else{
-      removeEventListener("click",rem)
-   }
-});
-
-incrementButton.addEventListener("click",function(){
-   let curentCount = + productsQuantyti.value;
-   if(curentCount>=1){
-      add();
-   }
-   else{
-      removeEventListener("click",add)
-   }
-   
-});
-
-function add(){
-   let curentCount = + productsQuantyti.value;
-   productsQuantyti.value = curentCount + 1;
+})
 }
 
-function rem(){
-   let curentCount = + productsQuantyti.value;
-   productsQuantyti.value = curentCount - 1;
-}*/
+
+for (let i=0;i<decrementButtons.length;i++)
+{
+decrementButtons[i].addEventListener("click",function(){
+   let curentCount = + productsQuantyti[i].value;
+   let nextcount = curentCount - 1;
+   productsQuantyti[i].value = nextcount;
+   toggleButtonState(nextcount,decrementButtons[i],incrementButtons[i])
+})
+}
+
+
+AOS.init();
+
+
