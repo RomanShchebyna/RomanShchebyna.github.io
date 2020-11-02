@@ -533,10 +533,14 @@ div .prise  {
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-   margin: 30px;
+   margin: 20px;
     
     
 
+}
+
+.quantity ,.quantyti-input{
+    text-align: center;
 }
 
 
@@ -780,3 +784,4 @@ text-align: center;
 .show{
     display: block;
 }
+
